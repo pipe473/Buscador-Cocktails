@@ -9,7 +9,7 @@ const Formulario = () => {
                 <legend className="text-center">Busca Bebidas por Categoría o Ingredientes</legend>
             </fieldset>
 
-            <div className="row">
+            <div className="row mt-4">
                 <div className="col-md-4">
                     <input
                         name="nombre"
@@ -24,9 +24,15 @@ const Formulario = () => {
                         name="categoria"
                     >
                         <option value="">-- Selecciona Categoría --</option>
-
                     </select>
                 </div>                
+            <div className="col-md-4">
+                <input
+                    type="submit"
+                    className="btn btn-block btn-primary"
+                    value="Buscar Bebidas"
+                />
+            </div>            
             </div>
         </form>
      );
