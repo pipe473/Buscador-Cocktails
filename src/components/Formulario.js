@@ -12,7 +12,10 @@ const Formulario = () => {
             <div className="row">
                 <div className="col-md-4">
                     <input
-
+                        name="nombre"
+                        className="form-control"
+                        type="text"
+                        placeholder="Buscar por Ingrediente"
                     />
                 </div>
             </div>
