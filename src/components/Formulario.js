@@ -8,6 +8,14 @@ const Formulario = () => {
             <fieldset>
                 <legend className="text-center">Busca Bebidas por Categoría o Ingredientes</legend>
             </fieldset>
+
+            <div className="row">
+                <div className="col-md-4">
+                    <input
+
+                    />
+                </div>
+            </div>
         </form>
      );
 }
