@@ -59,6 +59,7 @@ const { guardarIdReceta } = useContext(ModalContext);
                         className="btn btn-block btn-primary"
                         onClick={() => {
                             guardarIdReceta(receta.idDrink);
+                            handleOpen();
                         }}
                         >
                             Ver Receta
