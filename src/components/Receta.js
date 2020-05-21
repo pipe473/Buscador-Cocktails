@@ -8,6 +8,15 @@ const Receta = ({receta}) => {
 
                 <img className="card-img-top" src={receta.strDrinkThumb} alt={`Imagen de 
                 ${receta.strDrink}`} />
+
+                <div className="card-body">
+                    <button
+                        type="button"
+                        className="btn btn-block btn-primary"
+                        >
+                            Ver Receta
+                        </button>
+                </div>
            </div>
        </div> 
      );
