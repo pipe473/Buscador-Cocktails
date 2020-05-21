@@ -43,7 +43,10 @@ const handleClose = () => {
 }
 
 // Extraer los valores del context
-const { guardarIdReceta } = useContext(ModalContext);
+const { informacion, guardarIdReceta } = useContext(ModalContext);
+
+    console.log(informacion);
+    
 
     return ( 
        <div className="col-md-4 mb-3">
