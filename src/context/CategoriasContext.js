@@ -17,7 +17,7 @@ const CategoriasProvider = (props) => {
 
         const categorias = await axios.get(url);
 
-        console.log(categorias.data.drinks);
+        guardarCategorias(categorias.data.drinks);
         
     }
     obtenerCategorias();
@@ -26,7 +26,7 @@ const CategoriasProvider = (props) => {
     return(
         <CategoriasContext.Provider
             value={{
-                
+                categorias
             }}
         >
             {props.children}
