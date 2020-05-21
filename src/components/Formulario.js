@@ -18,6 +18,15 @@ const Formulario = () => {
                         placeholder="Buscar por Ingrediente"
                     />
                 </div>
+                <div className="col-md-4">
+                    <select
+                        className="form-control"
+                        name="categoria"
+                    >
+                        <option value="">-- Selecciona Categoría --</option>
+
+                    </select>
+                </div>                
             </div>
         </form>
      );
