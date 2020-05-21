@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 // Crear el context
 export const CategoriasContext = createContext();
@@ -9,6 +9,10 @@ const CategoriasProvider = (props) => {
     // Crear el state del Context
    const [ categorias, guardarCategorias ] = useState([]);
 
+   // Ejecutar el llamado a la api
+   useEffect(() => {
+
+   }, []);
 
     return(
         <CategoriasContext.Provider
