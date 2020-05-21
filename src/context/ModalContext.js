@@ -29,7 +29,8 @@ useEffect( () => {
         <ModalContext.Provider
             value={{
                 informacion,
-                guardarIdReceta
+                guardarIdReceta,
+                guardarReceta
             }}
         >
             {props.children}
