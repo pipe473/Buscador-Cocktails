@@ -64,6 +64,14 @@ const { guardarIdReceta } = useContext(ModalContext);
                         >
                             Ver Receta
                         </button>
+
+                        <Modal
+                            open={open}
+                        >
+                            <div style={modalStyle} className={classes.paper}>
+                                <h1>Desde Modal</h1>
+                            </div>
+                        </Modal>
                 </div>
            </div>
        </div> 
