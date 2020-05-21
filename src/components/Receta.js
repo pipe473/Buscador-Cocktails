@@ -67,6 +67,10 @@ const { guardarIdReceta } = useContext(ModalContext);
 
                         <Modal
                             open={open}
+                            onClose={() => {
+                                guardarIdReceta(null);
+                                handleClose();
+                            }}
                         >
                             <div style={modalStyle} className={classes.paper}>
                                 <h1>Desde Modal</h1>
