@@ -35,6 +35,7 @@ useEffect(() => {
     return ( 
         <RecetasContext.Provider
             value={{
+                recetas,
                 buscarRecetas,
                 guardarConsultar
             }}
