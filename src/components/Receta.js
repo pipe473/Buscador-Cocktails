@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ModalContext } from '../context/ModalContext';
 
 import Modal from '@material-ui/core/Modal';
@@ -27,6 +27,20 @@ const useStyles = makeStyles(theme => ({
 
 
 const Receta = ({receta}) => {
+
+// Configuración del modal de material-ui
+const [ modalStyle ] = useState(getModalStyle);
+const [ open, setOpen ] = useState(false);
+
+const classes = useStyles();
+
+const handleOpen = () => {
+    setOpen(true);
+}
+
+const handleClose = () => {
+    setOpen(false);
+}
 
 // Extraer los valores del context
 const { guardarIdReceta } = useContext(ModalContext);
