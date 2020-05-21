@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
+
 export const RecetasContext = createContext();
 
 const RecetasProvider = (props) => {
@@ -18,6 +19,9 @@ useEffect(() => {
         const obtenerRecetas = async () => {
             const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${nombre}&
             c=${categoria}`;
+
+            console.log(url);
+            
         }
         obtenerRecetas();
     }
